@@ -4,7 +4,7 @@ require 'json'
 
 params = JSON.parse(STDIN.read)                                 # Read the input from Bolt
 installdir = params['_installdir']                              # metaparameter received by default from bolt
-lib_path = File.join(installdir, 'orbstack_inventory', 'lib')   
+lib_path = File.join(installdir, 'orbstack_inventory', 'lib')
 $LOAD_PATH.unshift(lib_path)                                    # Add the lib directory to the load path
 
 require 'orbstack_inventory'

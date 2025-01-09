@@ -4,9 +4,13 @@
   "author": "Gavin Didrichsen",
   "summary": "Bolt inventory plugin for Orbstack",
   "license": "MIT",
-  "source": "https://github.com/gavindidrichsen/orbstack_inventory",
-  "dependencies": [],
-  "operatingsystem_support": [],
+  "source": "https://github.com/gavindidrichsen-puppetlabs/orbstack_inventory",
+  "dependencies": [
+
+  ],
+  "operatingsystem_support": [
+
+  ],
   "requirements": [
     {
       "name": "puppet",
