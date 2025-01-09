@@ -1,0 +1,6 @@
+{
+  "description": "Resolve targets for Orbstack inventory",
+  "input_method": "stdin",
+  "files": ["orbstack_inventory/lib/"],
+  "parameters": {}
+}
