@@ -1,7 +1,7 @@
 require 'orbstack_inventory'
 
 RSpec.describe OrbstackInventory do
-  let(:inventory) { OrbstackInventory.new }
+  let(:inventory) { described_class.new }
 
   describe '#resolve_reference' do
     it 'responds to resolve_reference' do

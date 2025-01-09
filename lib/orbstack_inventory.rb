@@ -39,7 +39,7 @@ class OrbstackInventory
               'host-key-check' => false,
               'run-as' => 'root',
               'user' => 'root',
-              'port' => 32222
+              'port' => 32_222
             }
           }
         }
