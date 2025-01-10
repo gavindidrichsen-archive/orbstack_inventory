@@ -12,9 +12,18 @@
 
 ## Usage
 
-Clone this repository beneath your bolt project's root directory, e.g., `./modules/orbstack_inventory`
+* update your `bolt-project.yaml` to include the `orbstack_inventory` dynamic inventory plugin, something like:
 
-Update your `inventory.yaml` to look like:
+```yaml
+---
+name: bigbird
+modules:
+  - git: 'https://github.com/gavindidrichsen-puppetlabs/orbstack_inventory.git'
+    ref: main
+```
+
+* `bolt module install` to download the plugin locally.
+* update your `inventory.yaml` to look like:
 
 ```yaml
 ---
@@ -25,7 +34,23 @@ groups:
       _plugin: orbstack_inventory
 ```
 
-Verify it's working by running `bolt inventory show`
+* verify it's working by first adding some VMs to your local orbstack and then running `bolt inventory show`.  The output should show the current list of VMs, something like:
+
+```bash
+gavin.didrichsen@DEV-Didrichsen bigbird % /opt/puppetlabs/bin/bolt inventory show
+Targets
+  20.04
+  22-04
+  24-04
+  fedora-poo
+  gitea
+  httpgitea
+  rocky-clean-amd
+  rocky9amd
+  rocky9arm
+...
+...
+```
 
 ## Contributing
 
