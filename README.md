@@ -8,8 +8,9 @@ This plugin module enables dynamic orbstack bolt inventory.  It is modeled after
 
 <!-- adrlog -->
 
-* [ADR-0001](doc/adr/0001-extract-task-logic-into-lib-directory.md) - Extract task logic into 'lib' directory to follow ruby best practice
-* [ADR-0002](doc/adr/0002-assume-that-native-ssh-is-configured-so-command-line-ssh-connects-fine-to-orbstack.md) - Assume that native ssh is configured so command-line ssh connects fine to orbstack
+* [ADR-0001](doc/adr/0001-extract-task-logic-into-lib-directory-to-follow-ruby-best-practice.md) - Extract task logic into 'lib' directory to follow ruby best practice
+* [ADR-0002](doc/adr/0002-configure-bolt-inventory-with-native-ssh-to-keep-things-simple.md) - Configure bolt inventory with native ssh to keep things simple
+* [ADR-0003](doc/adr/0003-gather-inventory-metadata-via-the-orb-cli-to-keep-things-simple.md) - Gather inventory metadata via the 'orb' cli to keep things simple
 
 <!-- adrlogstop -->
 
