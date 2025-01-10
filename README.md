@@ -14,20 +14,23 @@ This plugin module enables dynamic orbstack bolt inventory.  It is modeled after
 
 <!-- adrlogstop -->
 
+## Prerequisites
+
+* orbstack is installed and that you have 1 or more VMs created.
+* you are working in a bolt project.
+
 ## Usage
 
-* update your `bolt-project.yaml` to include the `orbstack_inventory` dynamic inventory plugin, something like:
+* add `https://github.com/gavindidrichsen-puppetlabs/orbstack_inventory.git` as a module to your `bolt-project.yaml`, e.g.,
 
   ```yaml
-  ---
-  name: bigbird
   modules:
-    - git: 'https://github.com/gavindidrichsen-puppetlabs/orbstack_inventory.git'
+    - git: https://github.com/gavindidrichsen-puppetlabs/orbstack_inventory.git
       ref: main
   ```
 
-* `bolt module install` to download the plugin locally.
-* update your `inventory.yaml` to look like:
+* install the module via `bolt module install`
+* update your `inventory.yaml` to look something like:
 
   ```yaml
   ---
@@ -38,23 +41,7 @@ This plugin module enables dynamic orbstack bolt inventory.  It is modeled after
         _plugin: orbstack_inventory
   ```
 
-* verify it's working by first adding some VMs to your local orbstack and then running `bolt inventory show`.  The output should show the current list of VMs, something like:
-
-  ```bash
-  gavin.didrichsen@DEV-Didrichsen bigbird % /opt/puppetlabs/bin/bolt inventory show
-  Targets
-    20.04
-    22-04
-    24-04
-    fedora-poo
-    gitea
-    httpgitea
-    rocky-clean-amd
-    rocky9amd
-    rocky9arm
-  ...
-  ...
-  ```
+* verify your inventory via`bolt inventory show`.
 
 ## Contributing
 
