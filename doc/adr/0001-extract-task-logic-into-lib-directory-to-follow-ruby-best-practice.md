@@ -1,4 +1,4 @@
-# 1. Extract task logic into 'lib' directory
+# 1. Extract task logic into 'lib' directory to follow ruby best practice
 
 Date: 2025-01-09
 
