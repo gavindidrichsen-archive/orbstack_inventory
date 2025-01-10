@@ -1,4 +1,4 @@
-# 2. Assume that native ssh is configured so command-line ssh connects fine to orbstack
+# 2. Configure bolt inventory with native ssh to keep things simple
 
 Date: 2025-01-10
 
