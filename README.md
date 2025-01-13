@@ -33,7 +33,6 @@ This plugin module enables dynamic orbstack bolt inventory.  It is modeled after
 * update your `inventory.yaml` to look something like:
 
   ```yaml
-  ---
   version: 2
   groups:
     - name: orbstack
