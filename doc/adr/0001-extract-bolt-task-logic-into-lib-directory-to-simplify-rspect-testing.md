@@ -1,4 +1,4 @@
-# 1. Extract task logic into 'lib' directory to follow ruby best practice
+# 1. Extract bolt task logic into 'lib' directory to simplify rspect testing
 
 Date: 2025-01-09
 
