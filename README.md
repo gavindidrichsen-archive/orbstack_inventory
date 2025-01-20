@@ -1,4 +1,4 @@
-## Archived Repository
+# Archived Repository
 
 ⚠️ This repository is archived and no longer maintained.  
 Please use [orbstack_bolt_inventory](https://github.com/gavindidrichsen-puppetlabs/orbstack_bolt_inventory) instead.
